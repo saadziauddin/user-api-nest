@@ -3,8 +3,18 @@ import { User } from './user.interface';
 
 @Injectable()
 export class UserService {
-    private users: User[] = [{ id: 1, name: 'Alice', email: 'alice@example.com' },
-    { id: 2, name: 'Alice 12', email: 'alice12@example.com' }];
+    private users: User[] = [
+        { 
+            id: 1, 
+            name: 'Alice', 
+            email: 'alice@example.com' 
+        },
+        { 
+            id: 2, 
+            name: 'Alice 12', 
+            email: 'alice12@example.com' 
+        }
+    ];
 
     // GET - Retrieve all users
     getAllUsers(): User[] {
